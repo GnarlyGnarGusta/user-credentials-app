@@ -1,0 +1,33 @@
+@import '../../../styles/_variables/colors';
+@import '../../../styles/_variables/layout';
+
+.Button {
+    font-family: inherit;
+    color: $baseFontColor;
+    background: $defaultColor;
+    border: 1px solid $defaultColor;
+    border-radius: $fieldRadius;
+    padding: $fieldPadding;
+    width: auto;
+    flex: 1 1 auto;
+    cursor: pointer;
+    
+    &:hover,
+    &:active {
+        background: darken($defaultColor, 0.1)
+    }
+
+    &:not(:last-child) {
+        margin-right: $xBase / 3;
+    }
+
+    .Primary {
+        color: $lightFontColor;
+        background: $primaryColor;
+
+        &:hover,
+        &:active {
+            background: darken($primaryColor, 0.1)
+        }
+    }
+}
