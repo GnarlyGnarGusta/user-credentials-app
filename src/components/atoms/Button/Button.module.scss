@@ -3,9 +3,12 @@
 
 .Button {
     font-family: inherit;
-    color: $baseFontColor;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.25;
+    color: $primaryColor;
     background: $defaultColor;
-    border: 1px solid $defaultColor;
+    border: 1px solid $primaryColor;
     border-radius: $fieldRadius;
     padding: $fieldPadding;
     width: auto;
@@ -14,20 +17,20 @@
     
     &:hover,
     &:active {
-        background: darken($defaultColor, 0.1)
+        background: darken($defaultColor, 5%)
     }
 
-    &:not(:last-child) {
+    &:not(:first-child) {
         margin-right: $xBase / 3;
     }
 
-    .Primary {
+    &.Primary {
         color: $lightFontColor;
         background: $primaryColor;
 
         &:hover,
         &:active {
-            background: darken($primaryColor, 0.1)
+            background: darken($primaryColor, 5%)
         }
     }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 
 import styles from './Button.module.scss';
 
@@ -15,7 +16,10 @@ const Button = ({
     ...restProps
 }) => (
     <button
-        className={styles.Button}
+        className={classNames(
+            styles.Button,
+            { [styles.Primary]: buttonStyle === BUTTON_STYLES.PRIMARY }
+        )}
         type={type}
         disabled={disabled}
         {...restProps}

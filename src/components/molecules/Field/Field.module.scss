@@ -1,0 +1,11 @@
+@import '../../../styles/_variables/colors';
+@import '../../../styles/_variables/layout';
+
+.FieldWrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    background: #FFF;
+    border: 1px solid $accentColor;
+    border-radius: $fieldRadius;
+    margin: 0 0 $yBase;
+}

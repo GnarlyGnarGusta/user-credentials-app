@@ -1,0 +1,13 @@
+@import '../../../styles/_variables/layout';
+
+.ButtonGroup {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    flex: 1 0 100%;
+    margin: 0 0 $yBase;
+    > button {
+        flex: 1 1 auto;
+    }
+}
