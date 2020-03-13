@@ -1,9 +1,12 @@
+@import '../../../styles/_variables/layout';
+
 .Input {
     font-size: 1em;
     line-height: 1.2;
     background: transparent;
     border: 0 none;
+    border-radius: $fieldRadius;
     width: 100%;
     flex: 0 1 100%;
-    padding: 10px 20px 8px;
+    padding: 24px 20px 8px;
 }

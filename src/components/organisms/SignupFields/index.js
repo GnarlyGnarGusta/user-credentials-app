@@ -13,7 +13,6 @@ const _handleChange = (event, dispatch) => dispatch({
 export const UsernameField = () => {
     const { state, dispatch } = useSignup();
     const { username } = state;
-    
 
     return (
         <Field
